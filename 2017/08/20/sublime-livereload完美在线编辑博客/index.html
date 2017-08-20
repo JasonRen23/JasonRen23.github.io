@@ -94,18 +94,21 @@
 
 
 
-<meta name="description" content="第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好npm和hexo，可使用npm -v和hexo -v查看是否已安装 使用hexo init blog生成博客模板 运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接,端口为4000  在ST3上安装liv">
+<meta name="description" content="&amp;emsp;&amp;emsp;第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好node.js和hexo，可使用npm -v和hexo -v查看是否已安装 12npm install -g hexonpm install hexo-deployer-git -save(将博客与gith">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sublime+livereload完美在线编辑博客">
 <meta property="og:url" content="http://yoursite.com/2017/08/20/sublime-livereload完美在线编辑博客/index.html">
 <meta property="og:site_name" content="JasonRen&#39;s Blog">
-<meta property="og:description" content="第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好npm和hexo，可使用npm -v和hexo -v查看是否已安装 使用hexo init blog生成博客模板 运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接,端口为4000  在ST3上安装liv">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好node.js和hexo，可使用npm -v和hexo -v查看是否已安装 12npm install -g hexonpm install hexo-deployer-git -save(将博客与gith">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/upload_image/livereload1.png">
-<meta property="og:updated_time" content="2017-08-20T05:11:59.622Z">
+<meta property="og:image" content="http://yoursite.com/upload_image/livereload2.png">
+<meta property="og:image" content="http://yoursite.com/upload_image/livereload3.png">
+<meta property="og:image" content="http://yoursite.com/upload_image/simpleloaddelay.png">
+<meta property="og:updated_time" content="2017-08-20T07:39:26.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sublime+livereload完美在线编辑博客">
-<meta name="twitter:description" content="第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好npm和hexo，可使用npm -v和hexo -v查看是否已安装 使用hexo init blog生成博客模板 运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接,端口为4000  在ST3上安装liv">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。 准备工作 安装好node.js和hexo，可使用npm -v和hexo -v查看是否已安装 12npm install -g hexonpm install hexo-deployer-git -save(将博客与gith">
 <meta name="twitter:image" content="http://yoursite.com/upload_image/livereload1.png">
 
 
@@ -325,11 +328,14 @@
       
 
       
-        <p>第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。</p>
+        <p>&emsp;&emsp;第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。</p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li>安装好npm和hexo，可使用npm -v和hexo -v查看是否已安装</li>
-<li>使用hexo init blog生成博客模板</li>
-<li>运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接,端口为4000</li>
+<li><p>安装好node.js和hexo，可使用npm -v和hexo -v查看是否已安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div><div class="line">npm install hexo-deployer-git -save(将博客与github关联需执行这步)</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用hexo init blog生成博客模板</p>
+</li>
+<li>运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接localhost:4000,端口为4000</li>
 </ul>
 <h2 id="在ST3上安装livereload插件"><a href="#在ST3上安装livereload插件" class="headerlink" title="在ST3上安装livereload插件"></a>在ST3上安装livereload插件</h2><ul>
 <li>ctrl+p -&gt; install package -&gt; LiveReload</li>
@@ -341,12 +347,23 @@
 </li>
 </ul>
 <h2 id="在google-chrome上安装livereload插件"><a href="#在google-chrome上安装livereload插件" class="headerlink" title="在google chrome上安装livereload插件"></a>在google chrome上安装<a href="https://chrome.google.com/webstore/search/livereload?hl=zh-CN" target="_blank" rel="external">livereload插件</a></h2><ul>
-<li>安装好以后可以在地址栏旁边看到如下按钮：<br><img src="/upload_image/livereload1.png" alt="haha"><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2></li>
+<li>安装好以后可以在地址栏旁边看到如下按钮：</li>
 </ul>
-<ol>
+<p><img src="/upload_image/livereload1.png" alt="" title="未开启监听"></p>
+<ul>
+<li><p>右键单击按钮选择”管理扩展程序”，把”允许访问网址文件”这一选项勾选上：<br><img src="/upload_image/livereload2.png" alt="" title="允许访问文件网址打开"></p>
+</li>
+<li><p>最后，如果你的博客已经在4000端口运行起来了，请点击livereload按钮让其开启监听，按钮会变成实心，如图：<br><img src="/upload_image/livereload3.png" alt="" title="已开始监听"></p>
+</li>
+</ul>
+<h2 id="刷新延迟问题"><a href="#刷新延迟问题" class="headerlink" title="刷新延迟问题"></a>刷新延迟问题</h2><ul>
+<li>这里遇到一个比较纠结的问题，就是一旦编辑sublime之后，保存一次网页会随之刷新一次，但是网页上的内容没有随之变化，保存两次网页上的内容却可以发生变化。这样纠结的问题当然需要解决啊，而且我认为一定是文件保存和网页刷新之间出现先后竞争问题，于是开始了一段漫长的问题解决之旅。<br>最后找到原因如下：<br><img src="/upload_image/simpleloaddelay.png" alt="" title="LiveReload Delay"></li>
+<li>于是我们进行如下操作：<br>shift+ctrl+p -&gt; LiveReload: Enable/disable plugins -&gt; Enable-Simple Reload with delay(400ms)<br>问题完美解决！enjoy it~</li>
+</ul>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
 <li><a href="https://packagecontrol.io/packages/LiveReload" target="_blank" rel="external">https://packagecontrol.io/packages/LiveReload</a></li>
 <li><a href="http://www.jianshu.com/p/f4ec41257206" target="_blank" rel="external">http://www.jianshu.com/p/f4ec41257206</a></li>
-<li></li>
+<li><a href="https://github.com/revolunet/sublimetext-markdown-preview/issues/119" target="_blank" rel="external">https://github.com/revolunet/sublimetext-markdown-preview/issues/119</a></li>
 </ol>
 
       
@@ -496,7 +513,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在ST3上安装livereload插件"><span class="nav-number">2.</span> <span class="nav-text">在ST3上安装livereload插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在google-chrome上安装livereload插件"><span class="nav-number">3.</span> <span class="nav-text">在google chrome上安装livereload插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在ST3上安装livereload插件"><span class="nav-number">2.</span> <span class="nav-text">在ST3上安装livereload插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在google-chrome上安装livereload插件"><span class="nav-number">3.</span> <span class="nav-text">在google chrome上安装livereload插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷新延迟问题"><span class="nav-number">4.</span> <span class="nav-text">刷新延迟问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">5.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
             
 
           </div>
