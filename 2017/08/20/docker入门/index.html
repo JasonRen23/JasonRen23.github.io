@@ -94,13 +94,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="JasonRen&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="容器的典型生命周期：创建、管理、停止，直到最终删除  　运行docker守护进程1sudo service docker start 　查看docker程序是否正常工作1sudo docker info 　运行第一个ubuntu容器并进入shell交互界面1sudo docker run -it ubuntu /bin/bash 　查看所有容器(包括没有运行的)和查看所有正在运行的容器12sudo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker入门">
+<meta property="og:url" content="http://yoursite.com/2017/08/20/docker入门/index.html">
 <meta property="og:site_name" content="JasonRen&#39;s Blog">
+<meta property="og:description" content="容器的典型生命周期：创建、管理、停止，直到最终删除  　运行docker守护进程1sudo service docker start 　查看docker程序是否正常工作1sudo docker info 　运行第一个ubuntu容器并进入shell交互界面1sudo docker run -it ubuntu /bin/bash 　查看所有容器(包括没有运行的)和查看所有正在运行的容器12sudo">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/upload_image/2017-09-30%20start_attach.png">
+<meta property="og:image" content="http://yoursite.com/upload_image/2017-09-30%20dockerattach.png">
+<meta property="og:image" content="http://yoursite.com/upload_image/2017-09-30%20dockerexec.png">
+<meta property="og:updated_time" content="2017-09-30T04:31:21.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JasonRen&#39;s Blog">
+<meta name="twitter:title" content="docker入门">
+<meta name="twitter:description" content="容器的典型生命周期：创建、管理、停止，直到最终删除  　运行docker守护进程1sudo service docker start 　查看docker程序是否正常工作1sudo docker info 　运行第一个ubuntu容器并进入shell交互界面1sudo docker run -it ubuntu /bin/bash 　查看所有容器(包括没有运行的)和查看所有正在运行的容器12sudo">
+<meta name="twitter:image" content="http://yoursite.com/upload_image/2017-09-30%20start_attach.png">
 
 
 
@@ -129,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/20/docker入门/"/>
 
 
 
 
 
-  <title>归档 | JasonRen's Blog</title>
+  <title>docker入门 | JasonRen's Blog</title>
   
 
 
@@ -154,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,148 +246,152 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/20/docker入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JasonRen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JasonRen's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">docker入门</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-20T21:43:51+08:00">
+                2017-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/20/docker入门/" itemprop="url">
-              
-                <span itemprop="name">docker入门</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-20T21:43:51+08:00"
-              content="2017-08-20" >
-          08-20
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/20/sublime-livereload完美在线编辑博客/" itemprop="url">
-              
-                <span itemprop="name">sublime+livereload完美在线编辑博客</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-20T12:01:56+08:00"
-              content="2017-08-20" >
-          08-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/17/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-17T22:22:58+08:00"
-              content="2017-08-17" >
-          08-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>容器的典型生命周期：创建、管理、停止，直到最终删除</p>
+<blockquote>
+<p>　运行docker守护进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service docker start</div></pre></td></tr></table></figure></p>
+<p>　查看docker程序是否正常工作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker info</div></pre></td></tr></table></figure></p>
+<p>　运行第一个ubuntu容器并进入shell交互界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker run -it ubuntu /bin/bash</div></pre></td></tr></table></figure></p>
+<p>　查看所有容器(包括没有运行的)和查看所有正在运行的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo docker ps -a </div><div class="line">sudo docker ps</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>退出当前交互式容器可以用exit命令，重新进入的话需要先start再attach:<br><img src="/upload_image/2017-09-30 start_attach.png" alt="" title="exit后如何重新进入容器shell"></p>
+<blockquote>
+<p>　想要在容器内运行多个进程<br>直接”sudo docker attach <container name="">“，容器始终在同一个进程下运行，无法进行异步操作，如下图所示：<br><img src="/upload_image/2017-09-30 dockerattach.png" alt="" title="docker attach 结果"><br><img src="/upload_image/2017-09-30 dockerexec.png" alt="" title="docker exec 结果"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">shell: sudo docker exec -it &lt;container name&gt;</div><div class="line">add a new file: sudo docker exec -d &lt;container name&gt; touch /etc/new_config_file</div></pre></td></tr></table></figure></container></p>
+</blockquote>
+<p>Docker存在一个名为scratch的特殊镜像，其并不实际存在，它表示一个空白的镜像。若你以scratch为基础镜像的话，意味着你不以任何镜像为基础，接下来所写的指令将作为镜像第一层开始存在。对于Linux下静态编译的程序来说，并不需要有操作系统提供运行时支持，所需的一切库都已经在可执行文件里了，因此直接FROM scratch会让镜像体积更加小巧，Go语言开发的应用很多会使用这种方式来制作镜像，因此Go被认为是特别适合容器微服务架构的语言。</p>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/20/sublime-livereload完美在线编辑博客/" rel="next" title="sublime+livereload完美在线编辑博客">
+                <i class="fa fa-chevron-left"></i> sublime+livereload完美在线编辑博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -387,6 +399,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -582,11 +598,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
 
 
   

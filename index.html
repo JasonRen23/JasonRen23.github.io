@@ -254,6 +254,137 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/20/docker入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JasonRen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JasonRen's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/20/docker入门/" itemprop="url">docker入门</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-20T21:43:51+08:00">
+                2017-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>容器的典型生命周期：创建、管理、停止，直到最终删除</p>
+<blockquote>
+<p>　运行docker守护进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service docker start</div></pre></td></tr></table></figure></p>
+<p>　查看docker程序是否正常工作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker info</div></pre></td></tr></table></figure></p>
+<p>　运行第一个ubuntu容器并进入shell交互界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker run -it ubuntu /bin/bash</div></pre></td></tr></table></figure></p>
+<p>　查看所有容器(包括没有运行的)和查看所有正在运行的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo docker ps -a </div><div class="line">sudo docker ps</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>退出当前交互式容器可以用exit命令，重新进入的话需要先start再attach:<br><img src="/upload_image/2017-09-30 start_attach.png" alt="" title="exit后如何重新进入容器shell"></p>
+<blockquote>
+<p>　想要在容器内运行多个进程<br>直接”sudo docker attach <container name="">“，容器始终在同一个进程下运行，无法进行异步操作，如下图所示：<br><img src="/upload_image/2017-09-30 dockerattach.png" alt="" title="docker attach 结果"><br><img src="/upload_image/2017-09-30 dockerexec.png" alt="" title="docker exec 结果"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">shell: sudo docker exec -it &lt;container name&gt;</div><div class="line">add a new file: sudo docker exec -d &lt;container name&gt; touch /etc/new_config_file</div></pre></td></tr></table></figure></container></p>
+</blockquote>
+<p>Docker存在一个名为scratch的特殊镜像，其并不实际存在，它表示一个空白的镜像。若你以scratch为基础镜像的话，意味着你不以任何镜像为基础，接下来所写的指令将作为镜像第一层开始存在。对于Linux下静态编译的程序来说，并不需要有操作系统提供运行时支持，所需的一切库都已经在可执行文件里了，因此直接FROM scratch会让镜像体积更加小巧，Go语言开发的应用很多会使用这种方式来制作镜像，因此Go被认为是特别适合容器微服务架构的语言。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/20/sublime-livereload完美在线编辑博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -571,7 +702,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
