@@ -16,7 +16,7 @@ addons:
 
 # S: Build Lifecycle
 before_install:
-    - npm install -g hexo hexo-cli gulp
+    - npm install -g hexo hexo-cli 
 
 install:
   - npm install
@@ -24,7 +24,7 @@ install:
 script:
  - hexo cl
  - hexo g
- - gulp
+ - hexo d
 
 after_script:
   - cd public
