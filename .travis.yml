@@ -12,16 +12,16 @@ cache:
 install:
   - npm install
 
-before_script:
-  - npm install -g gulp
+#before_script:
+#  - npm install -g gulp
 
 script:
-  - hexo cl
+# - hexo cl
   - hexo g
-  - gulp
+#  - gulp
 
 after_script:
-  - cd public
+  - cd ./public
   - git init
   - git config user.name "zhicren"
   - git config user.email "zhicheng_ren@163.com"
