@@ -32,7 +32,7 @@ after_script:
 
 branches:
   only:
-    - master
+    - hexo
 env:
  global:
    - GH_REF: github.com/JasonRen23/JasonRen23.github.io.git
