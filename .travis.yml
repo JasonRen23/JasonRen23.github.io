@@ -1,0 +1,39 @@
+language: node_js
+node_js: stable
+
+# Travis-CI Caching
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+  - npm install -g gulp
+
+script:
+  - hexo cl
+  - hexo g
+  - gulp dist
+
+after_script:
+  - cd dist
+  - git init
+  - git config user.name "zhicren"
+  - git config user.email "zhicheng_ren@163.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/JasonRen23/JasonRen23.github.io.git
+   - secure: "DF/FYOv2tFQy9jZqO8py3HyMxu9U9Su6pNficnyYaXiKzDZANMaZ69MRohMx5gjbaqe8eyBEigPhUbjzQMk/dnBzlbxNjUm5smNMptfAXvGwsW8ylJ5c0mbFWJXoaz+icVZbvPRQkNzCxGJFzd6pmE49KuRKU1dBwkd4RD8X7ofj476srvJsyIjPpsyAFjA7Ryhj+97JYXGnQcEpCB3Y3omLLzIn5kYqE7dgeRt54+e8Ywgy2YAdhaH975fwNq6mYI8j/ubl/l8XwIysMlVQqd6tXTJzPrRcVpMvyz099Hi/TDyM87ClAAffvuzuj8FraeM9mw8dRB6GVtb/YyFrWfM7qcMQEDUJZCarWrPPnARe9pXQFkcbL5ReqsQd9dJHjmBNnEXAsWzhE//V9aKqzoE4MonIdTPZ9gR4mAtgZdDHkfzaQjGj9oTDnXhE5IjZGEWHdmgreKO/XSm0qtYtXen2K/Ky12k53aeiHf4ENU5qR0Ihlop4KEWQrvVSUi1E3tlHL4Du4e2sFIhZlHymoIKE0kE0/PPMJjaYpr26cas9Z3SfEifL3WtN7el1e93rwVVSbb/6m50ovpKW0uadO5XMBs5x2czXzT8FHdLCzjENF/9AznadbyJenss2RBcqlZqfWAl92yaQ1JsLJ04ohddK17wFugfLiK0TD376afY=" 
