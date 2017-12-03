@@ -13,7 +13,7 @@ install:
   - npm install
 
 before_script:
-  - npm install -g gulp
+  - npm install gulp
 
 script:
 # - hexo cl
