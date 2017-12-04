@@ -4,8 +4,8 @@
 
 # Site
 title: JasonRen's Blog
-subtitle:
-description:
+subtitle: 有志者事竟成
+description: Talk is cheap, show me the money
 author: JasonRen
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -56,7 +56,7 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+tag_map: 
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

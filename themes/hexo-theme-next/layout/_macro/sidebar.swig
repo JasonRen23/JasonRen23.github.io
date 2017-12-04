@@ -64,10 +64,10 @@
             {% set tagsPageQuery = site.pages.find({type: 'tags'}, {lean: true}) %}
             {% set hasTagsPage = tagsPageQuery.length > 0 %}
             <div class="site-state-item site-state-tags">
-              {% if hasTagsPage %}<a href="{{ url_for(tagsPageQuery[0].path) }}">{% endif %}
-                <span class="site-state-item-count">{{ site.tags.length }}</span>
-                <span class="site-state-item-name">{{ __('state.tags') }}</span>
-              {% if hasTagsPage %}</a>{% endif %}
+              <a href="{{ url_for(theme.menu.tags) }}">
+              <span class="site-state-item-count">{{ site.tags.length }}</span>
+              <span class="site-state-item-name">{{ __('state.tags') }}</span>
+               </a>
             </div>
           {% endif %}
 

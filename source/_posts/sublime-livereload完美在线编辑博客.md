@@ -1,27 +1,28 @@
 ---
 title: sublime+livereload完美在线编辑博客
 date: 2017-08-20 12:01:56
-tags:
+categories: IDE
+tags: sublime
 ---
-&emsp;&emsp;第一次搭建博客，对Markdown还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，ST3+livereload很好的满足了我的需求。
+&emsp;&emsp;第一次搭建博客，对`Markdown`还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，`ST3+livereload`很好的满足了我的需求。
 ## 准备工作
-* 安装好node.js和hexo，可使用npm -v和hexo -v查看是否已安装
+* 安装好`node.js`和`hexo`，可使用`npm -v`和`hexo -v`查看是否已安装*`**``**`*
 ```
 npm install -g hexo
 npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 ```
-* 使用hexo init blog生成博客模板
-* 运行hexo g本地生成静态文件,接着运行hexo s -g可在本地生成链接localhost:4000,端口为4000
+* 使用`hexo init blog`生成博客模板
+* 运行`hexo g`本地生成静态文件,接着运行`hexo s -g`可在本地生成链接`localhost:4000`,端口为4000
 
 ## 在ST3上安装livereload插件
-* ctrl+p -> install package -> LiveReload
+`ctrl+p` -> `install package` -> `LiveReload`
 * 手动安装，可以执行以下命令：
   ```
   cd ~/.config/sublime-text-3/Packages
   rm -rf LiveReload
   git clone https://github.com/alepez/LiveReload-sublimetext3 LiveReload
   ```
-* 进入到Preferences -> Package Settings -> LiveRload将Settings-User设为：
+* 进入到`Preferences -> Package Settings -> LiveRload`将`Settings-User`设为：
 ```
 {
       "enabled_plugins": [
@@ -31,6 +32,7 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
      
 }
 ```
+
 ## 在google chrome上安装[livereload插件](https://chrome.google.com/webstore/search/livereload?hl=zh-CN)
 * 安装好以后可以在地址栏旁边看到如下按钮：
 
@@ -47,7 +49,7 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 最后找到原因如下：
 ![](/upload_image/simpleloaddelay.png "LiveReload Delay")
 * 于是我们进行如下操作：
- shift+ctrl+p -> LiveReload: Enable/disable plugins -> Enable-Simple Reload with delay(400ms)
+ `shift+ctrl+p -> LiveReload: Enable/disable plugins -> Enable-Simple Reload with delay(400ms)`
  问题完美解决！enjoy it~
 
 ## 参考链接
