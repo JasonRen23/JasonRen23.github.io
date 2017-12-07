@@ -1,0 +1,21 @@
+# shell MODE定制脚本模式
+
+```bash
+#!/bin/bash
+
+#   -m MODE, --mode MODE  Mode of operation. Default value is dev
+
+＃　Default values
+MODE = "dev"
+function usage {
+  printf "  -m MODE, --mode MODE \tMode of operation. Default value is dev\n"
+}
+if [ "$MODE" = "dev"]; then
+	usage
+elif [ "$MODE" = "prod"]; then
+	pip install Flask
+	echo "flask python"
+	pip install pymongo
+	echo "mongodb python"
+```
+
