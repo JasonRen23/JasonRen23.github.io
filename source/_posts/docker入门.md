@@ -24,12 +24,12 @@ sudo docker ps -a
 sudo docker ps
 ```
 > 　退出当前交互式容器可以用 `exit` 命令，重新进入的话需要先`start` 再 `attach`:
-![](/upload_image/2017-09-30 start_attach.png "exit后如何重新进入容器shell")
->	想要在容器内运行多个进程
-直接运行`sudo docker attach [container name]`，容器始终在同一个进程下运行，无法进行异步操作，如下图所示：
-![](/upload_image/2017-09-30 dockerattach.png "docker attach 结果")
-![](/upload_image/2017-09-30 dockerexec.png "docker exec 结果")
->　在容器内部运行进程
+> ![](/upload_image/2017-09-30 start_attach.png "exit后如何重新进入容器shell")
+> 	想要在容器内运行多个进程
+> 直接运行`sudo docker attach [container name]`，容器始终在同一个进程下运行，无法进行异步操作，如下图所示：
+> ![](/upload_image/2017-09-30 dockerattach.png "docker attach 结果")
+> ![](/upload_image/2017-09-30 dockerexec.png "docker exec 结果")
+> 　在容器内部运行进程
 ```
 shell: sudo docker exec -it <container name> /bin/bash
 add a new file: sudo docker exec -d <container name> touch /etc/new_config_file 
