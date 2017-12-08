@@ -7,7 +7,7 @@ tags: shell脚本
 
 # Shell MODE定制脚本模式
 
-&emsp;&emsp;在运行环境脚本时，我们时常需要切换不同的调试环境，这个此时为不同的运行环境定制不同的MODE就有了需求。
+&emsp;&emsp;在运行环境脚本时，我们时常需要切换不同的调试环境，这时为不同的运行环境定制不同的MODE就有了需求。
 请看下面的shell脚本`start.sh`：
 ```bash
 #!/bin/bash
@@ -47,10 +47,10 @@ EXPOSE 8181
 
 可见在container运行之后会执行`start.sh`这个脚本。
 
-&emsp;&emsp;下面我们编写Makefile运行我们的定制容器，假如需要进入正式运行版本的后端环境，则注入MODE=prod这个环境变量即可。
+&emsp;&emsp;下面我们编写Makefile运行我们的定制容器，假如需要进入正式运行版本的后端环境，则注入MODE=prod这个环境变量即可，即指定参数`-e MODE=prod`。
 
 ```makefile
-final:
+prod:
 	-docker rm -f $@
 	docker run -it \
 		-p 8181:8181
