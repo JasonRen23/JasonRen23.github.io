@@ -47,3 +47,5 @@ if __name__ =='__main__':
     app.run(host='0.0.0.0', port=port, debug=True, use_debugger=False)
 ```
 
+## 参考链接
+1. http://docs.jinkan.org/docs/flask/quickstart.html

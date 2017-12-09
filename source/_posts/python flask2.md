@@ -63,7 +63,7 @@ Meteor.methods({
     console.log("CMD:" + log);
     if(Meteor.isServer){
       exec = Npm.require('child_process').exec;
-      exec(cmd, (err, stdout, stderr)) => {
+      exec(cmd, (err, stdout, stderr) => {
         if(err){
           console.log("ERR:" + err);
         }else{
@@ -89,7 +89,10 @@ Meteor.call("search",date,id,(error,result) => {
 date is 20170821, card id is 1672
 ```
 
-
+## 参考链接
+1. http://docs.jinkan.org/docs/flask/quickstart.html
+2. https://forums.meteor.com/t/exec-command-run-in-meteor-server/10695
+3.http://www.cnblogs.com/chyingp/p/node-learning-guide-child_process.html
 
 
 

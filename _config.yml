@@ -85,3 +85,28 @@ deploy:
 
 #comments
 livere_uid: MTAyMC8zMjExNS84Njc5
+
+# Social links
+social:
+  GitHub: https://github.com/JasonRen23
+  zhihu: https://www.zhihu.com/people/ren-zhi-cheng-1117
+
+  # Extensions
+## Plugins: http://hexo.io/plugins/
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+
+
+
+#本地站内搜索
+search:
+  path: search.xml
+  field: post
+
