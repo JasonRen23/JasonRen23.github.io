@@ -3,6 +3,7 @@ title: Meteor与mongodb数据库关联
 date: 2017-12-07 21:43:51
 categories: 前端
 tags: [Meteor, mongodb]	
+vistors: true
 ---
 
 ## Flow Router
