@@ -26,7 +26,7 @@ def hello():
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=8181)
 ```
-
+<!-- more -->
 ## 服务器如何外部可访问
 
 如果你禁用了 debug 或信任你所在网络的用户，你可以简单修改调用 [run()](http://docs.jinkan.org/docs/flask/api.html#flask.Flask.run) 的方法使你的服务器公开可用，如下:

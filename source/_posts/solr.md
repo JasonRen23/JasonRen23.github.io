@@ -22,7 +22,7 @@ java -Dsolr.solr.home=book/solr -jar start.jar
 ```
 java -Durl=http://127.0.0.1:8983/solr/book/update -jar post.jar ~/ren/backend/book*.xml
 ```
-
+<!-- more -->
 ### delete
 
 ```

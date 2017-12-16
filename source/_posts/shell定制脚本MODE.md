@@ -25,6 +25,7 @@ elif [ "$MODE" = "prod"]; then
 	cd /jasonren/backend && python flask.py &
 fi
 ```
+<!-- more -->
 其中我们设定默认模式为debug，当不定制MODE时其默认为debug，将打印我们在usage函数中的提示，进入调试模式；若设定MODE为prod，则将运行正式版本的后端。
 &emsp;&emsp;假如我们现在要启动一个装有pymongo和Flask的容器`container`，dockerfile如下：
 ```dockerfile

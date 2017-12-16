@@ -19,7 +19,7 @@ FlowRouter.route('/dataSearch',{
   	
 });
 ```
-
+<!-- more -->
 ## Publish data
 
 ```javascript

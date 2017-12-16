@@ -13,7 +13,7 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 ```
 * 使用`hexo init blog`生成博客模板
 * 运行`hexo g`本地生成静态文件,接着运行`hexo s -g`可在本地生成链接`localhost:4000`,端口为4000
-
+<!-- more -->
 ## 在ST3上安装livereload插件
 `ctrl+p` -> `install package` -> `LiveReload`
 * 手动安装，可以执行以下命令：

@@ -14,7 +14,6 @@ tags: [Meteor, mongodb]
   }
 </style>
 ```
-
 JS
 
 ```javascript
@@ -29,7 +28,7 @@ Template.addTemplateModal.events({
   }
 });
 ```
-
+<!-- more -->
 ```javascript
 Template.Search.helpers({
   templateDisableButton : (owner) => {
