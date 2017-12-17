@@ -4,7 +4,11 @@ date: 2017-07-21 12:01:56
 categories: IDE
 tags: sublime
 ---
+
+![](https://cdn-images-1.medium.com/max/2000/1*9qGFK0jjigADvy4BF_PZ_A.jpeg)
+
 &emsp;&emsp;第一次搭建博客，对`Markdown`还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，`ST3+livereload`很好的满足了我的需求。
+  <!-- more -->
 ## 准备工作
 * 安装好`node.js`和`hexo`，可使用`npm -v`和`hexo -v`查看是否已安装*`**``**`*
 ```
@@ -13,7 +17,7 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 ```
 * 使用`hexo init blog`生成博客模板
 * 运行`hexo g`本地生成静态文件,接着运行`hexo s -g`可在本地生成链接`localhost:4000`,端口为4000
-<!-- more -->
+
 ## 在ST3上安装livereload插件
 `ctrl+p` -> `install package` -> `LiveReload`
 * 手动安装，可以执行以下命令：
@@ -39,18 +43,18 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 ![](/upload_image/livereload1.png "未开启监听")
 
 * 右键单击按钮选择"管理扩展程序"，把"允许访问网址文件"这一选项勾选上：
-![](/upload_image/livereload2.png "允许访问文件网址打开")
+  ![](/upload_image/livereload2.png "允许访问文件网址打开")
 
 * 最后，如果你的博客已经在4000端口运行起来了，请点击livereload按钮让其开启监听，按钮会变成实心，如图：
-![](/upload_image/livereload3.png "已开始监听")
+  ![](/upload_image/livereload3.png "已开始监听")
 
 ## 刷新延迟问题
 * 这里遇到一个比较纠结的问题，就是一旦编辑sublime之后，保存一次网页会随之刷新一次，但是网页上的内容没有随之变化，保存两次网页上的内容却可以发生变化。这样纠结的问题当然需要解决啊，而且我认为一定是文件保存和网页刷新之间出现先后竞争问题，于是开始了一段漫长的问题解决之旅。
-最后找到原因如下：
-![](/upload_image/simpleloaddelay.png "LiveReload Delay")
+  最后找到原因如下：
+  ![](/upload_image/simpleloaddelay.png "LiveReload Delay")
 * 于是我们进行如下操作：
- `shift+ctrl+p -> LiveReload: Enable/disable plugins -> Enable-Simple Reload with delay(400ms)`
- 问题完美解决！enjoy it~
+   `shift+ctrl+p -> LiveReload: Enable/disable plugins -> Enable-Simple Reload with delay(400ms)`
+    问题完美解决！enjoy it~
 
 ## 参考链接
 1. https://packagecontrol.io/packages/LiveReload

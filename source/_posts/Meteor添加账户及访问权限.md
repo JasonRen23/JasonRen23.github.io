@@ -5,6 +5,10 @@ categories: 前端
 tags: [Meteor, mongodb]	
 ---
 
+![](https://cdn-images-1.medium.com/max/980/1*TWMx_EwfdYI3taqaXsuLVQ.png)
+
+<!-- more -->
+
 Ｈtml
 
 ```html
@@ -28,7 +32,6 @@ Template.addTemplateModal.events({
   }
 });
 ```
-<!-- more -->
 ```javascript
 Template.Search.helpers({
   templateDisableButton : (owner) => {

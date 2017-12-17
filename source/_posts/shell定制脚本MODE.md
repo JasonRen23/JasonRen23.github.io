@@ -5,6 +5,8 @@ categories: linux
 tags: shell脚本
 ---
 
+![](https://2.bp.blogspot.com/-C8uqt2a5ee8/V3Y0R_MeB5I/AAAAAAAAKNY/KrzwVxUu6UsrOlU4w776R891fAkc-6QEwCLcB/s1600/Bash-Final.jpg)
+
 # Shell MODE定制脚本模式
 
 &emsp;&emsp;在运行环境脚本时，我们时常需要切换不同的调试环境，这时为不同的运行环境定制不同的MODE就有了需求。

@@ -1,15 +1,17 @@
 ---
 title: Apache Solr
-date: 2017-12-07 21:43:51
+date: 2017-09-15 
 categories: 搜索引擎
 tags: [Python,Solr]	
 ---
 
 ## Solr简介
+<img src="https://lucidworks.com/wp-content/uploads/2015/02/solr-logo-on-orange-21.png" width = "500" height = "200"  align=center >
+
+[Solr](http://lucene.apache.org/solr/)是一个用Java编写、运行在Serlet容器（如Apache Tomcat或Jetty）的一个独立的全文搜索服务器。它采用了[Lucene](http://lucene.apache.org/) Java搜索库为核心的全文索引和搜索，并具有类似REST的HTTP/XML和JSON的API。
+<!-- more -->
 
 ## Solr更新检索库
-
-`old_version`
 
 ### start
 
@@ -22,7 +24,6 @@ java -Dsolr.solr.home=book/solr -jar start.jar
 ```
 java -Durl=http://127.0.0.1:8983/solr/book/update -jar post.jar ~/ren/backend/book*.xml
 ```
-<!-- more -->
 ### delete
 
 ```

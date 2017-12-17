@@ -4,7 +4,12 @@ date: 2017-08-20 21:43:51
 categories: 容器云
 tags: docker
 ---
+<img src="http://killbill.io/wp-content/uploads/2014/11/docker1.png" width = "500" height = "200"  align=center >
+
+<!-- more -->
+
 容器的典型生命周期：创建、管理、停止，直到最终删除
+
 # docker 命令行
 
 ## 运行docker守护进程
@@ -22,8 +27,6 @@ sudo docker info
 ```
 sudo docker run -it ubuntu /bin/bash
 ```
-<!-- more -->
-
 ## 查看所有容器(包括没有运行的)和查看所有正在运行的容器
 
 ```

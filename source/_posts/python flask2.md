@@ -4,13 +4,12 @@ date: 2017-08-11
 categories: Web技术
 tags: [Python,Meteor,JavaScript]
 ---
-
+![](https://oden.io/9167bbc9f80645f714528abfc6b68baf.svg)
 上一节聊了一下如何快速构建一个外部可访问的Flask服务器，这节主要演示一下如何快速构建前后端的交互功能。
-
+<!-- more -->
 ## 路由和HTTP方法
 
 如上一节所见，Flask主要通过`route()装饰器`把一个函数绑定在对应的URL上。并且你可以为你的装饰器添加**HTTP方法**。
-<!-- more -->
 **HTTP 方法**（也经常被叫做“谓词”）告知服务器，客户端想对请求的页面 *做* 些什么。下面的都是非常常见的方法：
 
 - GET

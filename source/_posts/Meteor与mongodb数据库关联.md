@@ -6,6 +6,10 @@ tags: [Meteor, mongodb]
 vistors: true
 ---
 
+![](https://cdn.scotch.io/scotchy-uploads/2015/04/first-meteorjs-application.png)
+
+<!-- more -->
+
 ## Flow Router
 
 ```javascript
@@ -19,7 +23,6 @@ FlowRouter.route('/dataSearch',{
   	
 });
 ```
-<!-- more -->
 ## Publish data
 
 ```javascript
