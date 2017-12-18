@@ -5,7 +5,7 @@ categories: 前端
 tags: [Meteor, mongodb]	
 ---
 
-![](https://cdn-images-1.medium.com/max/980/1*TWMx_EwfdYI3taqaXsuLVQ.png)
+![](http://p158wkz8m.bkt.clouddn.com/meteor.png)
 
 <!-- more -->
 

@@ -4,7 +4,7 @@ date: 2017-08-11
 categories: Web技术
 tags: [Python,Meteor,JavaScript]
 ---
-![](https://oden.io/9167bbc9f80645f714528abfc6b68baf.svg)
+![](http://p158wkz8m.bkt.clouddn.com/flask.svg)
 上一节聊了一下如何快速构建一个外部可访问的Flask服务器，这节主要演示一下如何快速构建前后端的交互功能。
 <!-- more -->
 ## 路由和HTTP方法

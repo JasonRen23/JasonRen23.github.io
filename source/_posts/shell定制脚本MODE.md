@@ -5,7 +5,7 @@ categories: linux
 tags: shell脚本
 ---
 
-![](https://2.bp.blogspot.com/-C8uqt2a5ee8/V3Y0R_MeB5I/AAAAAAAAKNY/KrzwVxUu6UsrOlU4w776R891fAkc-6QEwCLcB/s1600/Bash-Final.jpg)
+![](http://p158wkz8m.bkt.clouddn.com/Bash-Final.jpg)
 
 # Shell MODE定制脚本模式
 

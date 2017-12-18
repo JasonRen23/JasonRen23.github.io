@@ -6,7 +6,7 @@ tags: [Python,Solr]
 ---
 
 ## Solr简介
-<img src="https://lucidworks.com/wp-content/uploads/2015/02/solr-logo-on-orange-21.png" width = "500" height = "200"  align=center >
+<img src="http://p158wkz8m.bkt.clouddn.com/solr-logo-on-orange-21.png" width = "500" height = "200"  align=center >
 
 [Solr](http://lucene.apache.org/solr/)是一个用Java编写、运行在Serlet容器（如Apache Tomcat或Jetty）的一个独立的全文搜索服务器。它采用了[Lucene](http://lucene.apache.org/) Java搜索库为核心的全文索引和搜索，并具有类似REST的HTTP/XML和JSON的API。
 <!-- more -->

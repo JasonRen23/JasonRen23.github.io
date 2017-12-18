@@ -6,7 +6,7 @@ tags: [Meteor, mongodb]
 vistors: true
 ---
 
-![](https://cdn.scotch.io/scotchy-uploads/2015/04/first-meteorjs-application.png)
+![](http://p158wkz8m.bkt.clouddn.com/first-meteorjs-application.png)
 
 <!-- more -->
 
