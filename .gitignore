@@ -8,5 +8,4 @@ public/
 .idea
 package.json
 package-lock.json
-.md
-_posts
+source/_posts/
