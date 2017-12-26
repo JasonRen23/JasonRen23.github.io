@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-next
+theme: hexo-theme-melody
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -87,9 +87,9 @@ deploy:
 livere_uid: MTAyMC8zMjExNS84Njc5
 
 # Social links
-social:
-  GitHub: https://github.com/JasonRen23
-  zhihu: https://www.zhihu.com/people/ren-zhi-cheng-1117
+# social:
+#   GitHub: https://github.com/JasonRen23
+#   zhihu: https://www.zhihu.com/people/ren-zhi-cheng-1117
 
   # Extensions
 ## Plugins: http://hexo.io/plugins/
@@ -106,7 +106,12 @@ limit: 20
 
 
 #本地站内搜索
-search:
-  path: search.xml
-  field: post
+# search:
+#   path: search.xml
+#   field: post
 
+
+server:
+  compress: true # 本地压缩
+
+  
