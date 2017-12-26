@@ -1,0 +1,199 @@
+# html lang
+# ---------------
+language: zh-Hans
+
+# Main menu navigation
+# ---------------
+menu:
+  home: /
+  archives: /archives/
+  categories: /categories/
+  tags: /tags/
+  guestbook: /guestbook
+  about: /about/
+
+# Favicon
+# ---------------
+favicon: /favicon.ico
+
+# PWA
+# ---------------
+pwa:
+  enable: false
+  manifest: 
+
+
+# Highlight theme
+# ---------------
+highlight_theme: default
+
+# Nav settings
+# ---------------
+#social:
+  #icon_name: url
+  # Social links
+social:
+    github-alt: https://github.com/JasonRen23
+    paper-plane-o: https://www.zhihu.com/people/ren-zhi-cheng-1117
+     # rss: http://jasonren.top/atom.xml
+# Social Links Icons
+# Icon Mapping:
+#   Map a menu item to a specific FontAwesome icon name.
+#   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
+#   When an globe mask icon presenting up means that the item has no mapping icon.
+# social_icons:
+#   enable: true
+#   icons_only: false
+#   transition: false
+#   # Icon Mappings.
+#   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
+#   github: github-alt
+#   E-Mail: envelope
+#   Google: google
+#   Twitter: twitter
+#   FB Page: facebook
+#   VK Group: vk
+#   Skype: skype
+#   YouTube: youtube
+#   Instagram: instagram
+#   StackOverflow: stack-overflow
+#   Weibo: weibo
+#   zhihu: paper-plane-o
+# Algolia search
+# ---------------
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
+
+# Local search
+# ---------------
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+
+# MathJax
+# ---------------
+
+mathjax:
+  enable: false
+  cdn: https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+
+# Toggle fireworks (IE >= 10)
+# ---------------
+fireworks: false
+
+# Analysis
+# ---------------
+baidu_analytics: 
+
+google_analytics:
+
+# stylesheets loaded in the <head>
+# ---------------
+stylesheets:
+- /css/index.css
+
+# scripts loaded in the end of the body
+# ---------------
+scripts:
+- /js/utils.js
+- /js/fancybox.js
+- /js/sidebar.js
+- /js/copy.js
+- /js/fireworks.js
+- /js/transition.js
+- /js/scroll.js
+- /js/head.js
+
+# cdn for third-party library
+# ---------------
+cdn:
+  css:
+    fontawesome: https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
+  js:
+    anime: /js/third-party/anime.min.js
+    jquery: /js/third-party/jquery.min.js
+    fancybox: /js/third-party/jquery.fancybox.min.js
+    velocity: /js/third-party/velocity.min.js 
+    velocity-ui: /js/third-party/velocity.ui.min.js 
+
+# Post info settings
+# ---------------
+avatar: http://osrmzp0jr.bkt.clouddn.com/618991108587536653.jpg
+
+top_img: true # false or url of img 
+
+post_meta:
+  date_type: created # created or updated 
+  categories: true
+  tags: true
+
+wordcount:
+  enable: false
+
+toc:
+  enable: true
+
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 3.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+# QR_code:
+  # - itemlist:
+  #     img:
+  #     text:
+
+
+addThis:
+  enable: false
+  #pubid: 
+
+disqus:
+  enable: false 
+  #shortname: 
+  #count: 
+
+# Footer Settings
+# ---------------
+since: 2013
+
+ICP:
+  enable: false
+  #text: 
+
+# busuanzi count for PV / UV in site
+busuanzi:
+  # count values only if the other configs are false
+  enable: true
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # custom pv span for one page only
+  page_pv: true
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
+
+
+# Sidebar Settings
+# ---------------
+#links_title: Links
+#links:
+  #Name: url
+
+# Version
+# ---------------
+version: 1.3
