@@ -1,6 +1,7 @@
 ---
-title: categories
-date: 2017-12-03 15:41:08
-type: "categories"
-comments: false
+layout: page
+type: categories
+title: Categories
+date: 2017-11-26 19:44:34
+tags:
 ---
