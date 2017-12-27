@@ -5,12 +5,12 @@ language: zh-Hans
 # Main menu navigation
 # ---------------
 menu:
-  home: /
-  archives: /archives/
-  categories: /categories/
-  tags: /tags/
-  guestbook: /guestbook
-  about: /about/
+  主页: /
+  文章: /archives
+  标签: /tags
+  分类: /categories
+  # Quotes: /quotes
+  关于我: /about
 
 # Favicon
 # ---------------
@@ -35,7 +35,7 @@ highlight_theme: default
 social:
     github-alt: https://github.com/JasonRen23
     paper-plane-o: https://www.zhihu.com/people/ren-zhi-cheng-1117
-     # rss: http://jasonren.top/atom.xml
+    rss: http://jasonren.top/atom.xml
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -88,7 +88,7 @@ mathjax:
 
 # Toggle fireworks (IE >= 10)
 # ---------------
-fireworks: false
+fireworks: true
 
 # Analysis
 # ---------------
@@ -129,7 +129,7 @@ cdn:
 # ---------------
 avatar: http://osrmzp0jr.bkt.clouddn.com/618991108587536653.jpg
 
-top_img: true # false or url of img 
+top_img: http://p158wkz8m.bkt.clouddn.com/sky-nature-mountain-space-stars-wallpaper-1.jpg # false or url of img 
 
 post_meta:
   date_type: created # created or updated 
@@ -137,7 +137,7 @@ post_meta:
   tags: true
 
 wordcount:
-  enable: false
+  enable: true
 
 toc:
   enable: true
@@ -158,7 +158,14 @@ addThis:
   #pubid: 
 
 disqus:
-  enable: false 
+  enable: true # or false
+  shortname: jasonren
+  count: true # or false. It show the comments of your post
+
+# livere:
+#   enable: true
+#   livere_uid : MTAyMC8zMjExNS84Njc5
+
   #shortname: 
   #count: 
 
@@ -173,7 +180,7 @@ ICP:
 # busuanzi count for PV / UV in site
 busuanzi:
   # count values only if the other configs are false
-  enable: true
+  enable: false
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
