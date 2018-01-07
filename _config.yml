@@ -106,9 +106,9 @@ limit: 20
 
 
 #本地站内搜索
-# search:
-#   path: search.xml
-#   field: post
+search:
+  path: search.xml
+  field: post
 
 
 # server:

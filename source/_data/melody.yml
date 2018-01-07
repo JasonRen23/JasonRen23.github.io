@@ -36,6 +36,9 @@ social:
     github-alt: https://github.com/JasonRen23
     paper-plane-o: https://www.zhihu.com/people/ren-zhi-cheng-1117
     rss: http://jasonren.top/atom.xml
+    # search:
+    #    path: search.xml
+    #    field: post
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -152,19 +155,23 @@ post_copyright:
   #     img:
   #     text:
 
+# adv:
+#   enable: true
+#   info: <a href="https://www.vultr.com/?ref=7231808"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
+
 
 addThis:
   enable: false
   #pubid: 
 
 disqus:
-  enable: true # or false
-  shortname: jasonren
-  count: true # or false. It show the comments of your post
+  enable: false # or false
+#   shortname: jasonren
+#   count: true # or false. It show the comments of your post
 
-# livere:
-#   enable: true
-#   livere_uid : MTAyMC8zMjExNS84Njc5
+laibili:
+  enable: true
+  uid: MTAyMC8zMjExNS84Njc5
 
   #shortname: 
   #count: 
