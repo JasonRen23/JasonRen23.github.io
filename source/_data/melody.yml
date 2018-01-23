@@ -132,7 +132,7 @@ cdn:
 # ---------------
 avatar: http://osrmzp0jr.bkt.clouddn.com/618991108587536653.jpg
 
-top_img: http://p158wkz8m.bkt.clouddn.com/sky-nature-mountain-space-stars-wallpaper-1.jpg # false or url of img 
+top_img: http://p158wkz8m.bkt.clouddn.com/blogbg.jpg # false or url of img 
 
 post_meta:
   date_type: created # created or updated 
@@ -178,7 +178,7 @@ laibili:
 
 # Footer Settings
 # ---------------
-since: 2013
+since: 2017
 
 ICP:
   enable: false
