@@ -10,7 +10,7 @@ copyright: false
 var JasonRen = {
     "Name": "JasonRen",
     "Birth": "1993/11",
-    "University": "Shanghai university",
+    "University": "Shanghai University",
     "Blog": "http://jasonren.top",
     "Github": "https://github.com/JasonRen23",
     "QQ": "359035244",
@@ -21,7 +21,7 @@ var JasonRen = {
 # 关于本站
 
 1. [Hexo](https://hexo.io/)
-2. 博客地址： http://jasonren.top
+2. 博客地址：[ jasonren.top](http://jasonren.top)
 3. 主题:：[hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
 4. 评论：[LiveRe](https://livere.com)
 5. 统计热度：[LeanCloud](https://leancloud.cn/dashboard)
