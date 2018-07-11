@@ -1,11 +1,11 @@
 
 - var pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
+- if (is_archive()) pageTitle = _p('page.archives')
+- if (is_tag()) pageTitle = _p('page.tag') + ': ' + page.tag
+- if (is_category()) pageTitle = _p('page.category') + ': ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' | ' + config.title
+- pageTitle ? pageTitle += ' | ' + config.title : pageTitle = config.title
 
 - var pageDescription = page.description || page.title || config.description || ''
 - var pageKeywords = (config.keywords || []).join(',')
@@ -27,10 +27,10 @@ html(lang=config.language)
     !=favicon_tag(config.favicon || theme.favicon || '/favicon.ico')
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       each url in theme.stylesheets
-        link(rel='stylesheet', href=url)
+        link(rel='stylesheet', href=url_for(url) + '?version=' + version())
     each item in theme.cdn.css
       if item !== undefined
-        link(rel='stylesheet', href=item + '?version=' + theme.version)
+        link(rel='stylesheet', href=item + '?version=' + version())
     include ./head.pug
     include ./config.pug
   body
@@ -52,9 +52,10 @@ html(lang=config.language)
     i.fa.fa-arrow-up#go-up(aria-hidden="true")
     each item in theme.cdn.js
       if item !== undefined
-        script(src=item)
+        script(src=url_for(item))
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
-        script(src=url + '?version=' + version())
+        script(src=url_for(url) + '?version=' + version())
     include ./additional-js.pug
+    include ./search/index.pug

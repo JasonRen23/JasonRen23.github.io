@@ -1,27 +1,48 @@
 $(function () {
   var loadFlag = false
   $('a.social-icon.search').on('click', function () {
-    $('body').css('width', '100%');
-    $('body').css('overflow-y', 'scroll');
-    $('body').css('position', 'fixed');
+    $('body').css('width', '100%')
+    $('body').css('overflow', 'hidden')
     $('.search-dialog').velocity('stop')
-      .velocity('transition.expandIn', { duration: 300 })
+      .velocity('transition.expandIn', {
+        duration: 300,
+        complete: function () {
+          $('#local-search-input input').focus()
+        }
+      })
     $('.search-mask').velocity('stop')
-      .velocity('transition.fadeIn', { duration: 300 })
+      .velocity('transition.fadeIn', {
+        duration: 300
+      })
     if (!loadFlag) {
-      search(GLOBAL.localSearch.path)
+      search(GLOBAL_CONFIG.localSearch.path)
       loadFlag = true
     }
-  })
-  $('.search-mask, .search-close-button').on('click', function () {
-    $('body').css('position', 'absolute');
-    $('.search-dialog').velocity('stop')
-      .velocity('transition.expandOut', { duration: 300 })
-    $('.search-mask').velocity('stop')
-      .velocity('transition.fadeOut', { duration: 300 })
+
+    // shortcut: ESC
+    document.addEventListener('keydown', function f(event) {
+      if (event.code == "Escape") {
+        closeSearch();
+        document.removeEventListener('keydown', f);
+      }
+    })
   })
 
-  function search (path) {
+  var closeSearch = function () {
+    $('body').css('overflow', 'auto')
+    $('.search-dialog').velocity('stop')
+      .velocity('transition.expandOut', {
+        duration: 300
+      })
+    $('.search-mask').velocity('stop')
+      .velocity('transition.fadeOut', {
+        duration: 300
+      })
+  }
+  $('.search-mask, .search-close-button').on('click', closeSearch)
+
+
+  function search(path) {
     $.ajax({
       url: '/' + path,
       dataType: 'xml',
@@ -75,7 +96,7 @@ $(function () {
             }
           })
           if (count === 0) {
-            str += '<div id="local-search__hits-empty">' + GLOBAL.localSearch.labels.hits_empty.replace(/\$\{query}/, this.value.trim()) +
+            str += '<div id="local-search__hits-empty">' + GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/, this.value.trim()) +
               '</div>'
           }
           $resultContent.innerHTML = str
