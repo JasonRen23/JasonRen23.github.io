@@ -1,5 +1,5 @@
 ---
-title: sidebar toc侧栏显示问题
+title: melody sidebar侧栏toc显示问题
 date: 2017-12-26 
 categories: 前端
 tags: hexo
@@ -9,11 +9,11 @@ tags: hexo
 
 一时兴起，换了个漂亮点的hexo主题[melody](https://molunerfinn.com/hexo-theme-melody-doc/#/)。
 
-![](http://p158wkz8m.bkt.clouddn.com/melodyy.PNG)
-
-一波插件及风格化调好之后，发现sidebar出现了问题。<escape><!-- more --></escape><escape><br></escape>如下图所示：
+一波插件及风格化调好之后，发现sidebar出现了问题。如下图所示：
 
 ![sidebar目录](http://p158wkz8m.bkt.clouddn.com/sidebartoc.PNG "sidebar catalog")
+
+<escape><!-- more --></escape><escape><br></escape>
 
 就是锚点和标题始终不在同一行，用chrome开发者工具发现渲染后sidebar被解析为了如下内容：
 

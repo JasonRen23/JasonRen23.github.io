@@ -25,7 +25,7 @@ pwa:
 
 # Highlight theme
 # ---------------
-highlight_theme: default
+highlight_theme: darker
 
 # Nav settings
 # ---------------
@@ -165,12 +165,12 @@ addThis:
   #pubid: 
 
 disqus:
-  enable: false # or false
-#   shortname: jasonren
-#   count: true # or false. It show the comments of your post
+  enable: true # or false
+  shortname: jasonren-top
+  count: true # or false. It show the comments of your post
 
 laibili:
-  enable: true
+  enable: false
   uid: MTAyMC8zMjExNS84Njc5
 
   #shortname: 
@@ -201,6 +201,20 @@ busuanzi:
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
+follow:
+  enable: true
+  url: 'https://github.com/JasonRen23'
+  text: 'Follow Me'
+
+theme_color:
+  enable: true # or false -> to use the default theme
+  main: "#263238"
+  paginator: "#000"
+  button_hover: "#49B1F5"
+  text_selection: "#000"
+  link_color: "#000"
+  hr_color: "#EEEEEE"
+  meta_color: "#000"
 
 # Sidebar Settings
 # ---------------

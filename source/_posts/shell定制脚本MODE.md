@@ -1,11 +1,9 @@
 ---
-title: Shell MODE
+title: Shell脚本+Docker切换开发环境
 date: 2017-12-07 21:43:51
 categories: linux
 tags: shell脚本
 ---
-
-![](http://p158wkz8m.bkt.clouddn.com/Bash-Final.jpg)
 
 ## Shell MODE定制脚本模式
 

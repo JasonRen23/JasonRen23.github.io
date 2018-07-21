@@ -4,25 +4,26 @@ date: 2018-03-08
 categories: 容器云
 tags: kubernetes
 ---
-![](http://p158wkz8m.bkt.clouddn.com/kubernetes_intro1.jpg)
+
 最近忙于面试，为了缓解紧张的备战心情，更新一下之前总结的一些关于k8s的部署指南，包括**单机版**和**集群版**。
+![](http://p158wkz8m.bkt.clouddn.com/kubernetes.jpg)
 <escape><!-- more --></escape>
 ## 单机版 kubernetes
 即 Master 和 Node （Minion）为同一台机器<escape><br></escape>
 
 关闭防火墙
-```shell
+```bash
    systemctl disable firewalld.service
    systemctl stop firewalld.service
 ```
 安装启用 iptabels
-```shell
+```bash
 yum install -y iptables-services
 systemctl enable iptables.service
 systemctl start iptables.service
 ```
 配置 kubernetes yum 源
-```shell
+```vim
 vim /etc/yum.repos.d/kubernetes.repo
 
 [kubernetes]
@@ -35,7 +36,7 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
 https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 ```
 安装etcd 和k8s
-```shell
+```bash
 yum install -y etcd kubernetes
 ```
 安装过程中会安装 docker，为了防止与已有 docker 版本冲突，安装之前最好卸载掉已有的 docker。
@@ -47,15 +48,15 @@ yum install -y etcd kubernetes
 - apiserver 配置文件 /etc/kubernetes/apiserver
 `vim /etc/kubernetes/apiserver`<escape><br></escape>
 删除 KUBE_ADMISSION_CONTROL 中的 ServiceAccount
-```shell
+```bash
 KUBE_ADMISSION_CONTROL="--admission_control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ServiceAccount,ResourceQuota"
 ```
 - 改为：
-    ```shell
+    ```bash
     KUBE_ADMISSION_CONTROL="--admission_control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ResourceQuota"
     ```
 按照顺序启动服务
-```shell
+```bash
 systemctl start etcd
 systemctl start docker
 systemctl start kube-apiserver.service
@@ -95,25 +96,25 @@ spec:
           value: "123456"
 ```
 - 创建 rc
-```shell
+```bash
 $ kubectl create -f mysql-rc.yaml
 replicationcontroller 'mysql' created
 ```
 
 - 查看 rc
-```shell
+```bash
 $ kubectl get rc
 NAME DESIRED CURRENT READY AGE
 mysql 1 1 0 14s
 ```
 - 查看 pod
-```shell
+```bash
 $ kubectl get pods
 NAME READY STATUS RESTARTS AGE
 mysql-b0gk0 0/1 ContainerCreating 0 3s
 ```
 - 此时pod 的状态处于 ContainerCreating，需要等待一下，直到状态变为Running
-```shell
+```bash
 NAME READY STATUS RESTARTS AGE
 mysql-b0gk0 1/1 Running 0 6m
 ```
@@ -130,12 +131,12 @@ spec:
     app: mysql
 ```
 - 创建 service
-```shell
+```bash
 $ kubectl create -f mysql-svc.yaml
 service "mysql" created
 ```
 - 查看service状态
-```shell 
+```bash 
 $ kubectl get svc
 NAME CLUSTER-IP EXTERNAL-IP PORT(S) AGE
 kubernetes 10.254.0.1 <none> 443/TCP 18m
@@ -169,19 +170,19 @@ spec:
           - containerPort: 8080
 ```
 - 创建rc
-```shell
+```bash
 $ kubectl create -f myweb-rc.yaml
 replicationcontroller "myweb" created
 ```
 - 查看rc
-```shell
+```bash
 $ kubectl get rc
 NAME DESIRED CURRENT READY AGE
 mysql 1 1 1 43m
 myweb 5 5 0 21s
 ```
 - 查看 pod，根据 rc 中的设置，有 5 个 replicas
-```shell
+```bash
 $ kubectl get pods
 NAME READY STATUS RESTARTS AGE
 mysql-wk349 1/1 Running 0 44m
@@ -206,12 +207,12 @@ spec:
     app: myweb
 ```
 - 创建service
-```shell
+```bash
 $ kubectl create -f myweb-svc.yaml
 service "myweb" created
 ```
 - 查看 service
-```shell
+```bash
 $ kubectl get services
 NAME CLUSTER-IP EXTERNAL-IP PORT(S) AGE
 kubernetes 10.254.0.1 <none> 443/TCP 5h
@@ -225,20 +226,20 @@ myweb 10.254.90.94 <nodes> 8080:30001/TCP 23s
 以下没有特别说明的时候，都是在 node 上进行的操作。
 
 关闭防火墙
-```shell
+```bash
 systemctl disable firewalld.service
 systemctl stop firewalld.service
 ```
 
 安装启用 iptabels
-```shell
+```bash
 yum install -y iptables-services
 systemctl start iptables.service
 systemctl enable iptables.service
 ```
 
 配置 yum 源
-```shell
+```vim
 vim /etc/yum.repos.d/kubernetes.repo
 
 [kubernetes]
@@ -252,7 +253,7 @@ https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 ```
 
 安装 kubernetes
-```shell
+```bash
 yum install -y kubernetes
 ```
 - **安装过程中会安装 docker，为了防止与已有 docker 版本冲突，安装之前最好卸载掉已有的 docker**
@@ -262,7 +263,7 @@ yum install -y kubernetes
 
 - Master 上
  修改配置 Master 和 etcd server 信息
- ```shell
+ ```bash
 vim /etc/kubernetes/config
 KUBE_MASTER="--master=http://10.75.12.117:8080"
 KUBE_ETCD_SERVERS="--etcd-servers=http://10.75.12.117:2379"
@@ -272,7 +273,7 @@ KUBE_ETCD_SERVERS="--etcd-servers=http://10.75.12.117:2379"
 - 如果有修改 etcd.conf 要重启 etcd， `systemctl restart etcd`
 
 - 修改配置 api server 信息
-```shell
+```bash
 vim /etc/kubernetes/apiserver
 KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0"
 KUBE_API_PORT="--port=8080"
@@ -281,7 +282,7 @@ KUBE_API_PORT="--port=8080"
 - 注释掉 KUBE_ETCD_SERVERS，config 中已经设置过了
 
 - 重启 Master 服务
-```shell
+```bash
 systemctl restart etcd
 systemctl restart kube-apiserver.service
 systemctl restart kube-controller-manager.service
@@ -291,7 +292,7 @@ systemctl restart kube-scheduler.service
 单机版的 Master 作为 Node 时，配置文件修改方式和单独作为 Node 节点的配置文件修改一样。
  
 - 设置指向 Master 和 etcd server
-```shell
+```vim
 vim /etc/kubernetes/config
 KUBE_MASTER="--master=http://10.75.12.117:8080"
 KUBE_ETCD_SERVERS="--etcd-servers=http://10.75.12.117:2379"
@@ -299,7 +300,7 @@ KUBE_ETCD_SERVERS="--etcd-servers=http://10.75.12.117:2379"
  ```
 
 - 修改 kubelet
-```shell
+```vim
 vim /etc/kubernetes/kubelet
 KUBELET_ADDRESS="--address=0.0.0.0"
 KUBELET_PORT="--port=10250"
@@ -310,17 +311,17 @@ KUBELET_API_SERVER="--api-servers=http://10.75.12.117:8080"
  
  启动 Node 的服务
 
-```shell
+```bash
 systemctl start docker
 systemctl start kubelet.service
 systemctl start kube-proxy.service
 ```
 在` /var/log/messages` 中提取查看 kube 的信息，可以看到 Node 向 Master 注册自己。
-```shell
+```bash
 Aug  2 21:55:28 localhost kubelet: I0802 21:55:28.449019   24104 kubelet_node_status.go:77] Successfully registered node 10.75.12.120
 ```
 在 Master 上查看 Node，可以看到新注册进去的 Node。
-```shell
+```bash
 $ kubectl get nodes
 NAME STATUS AGE
 127.0.0.1 NotReady 2m
@@ -351,7 +352,7 @@ sdnsecret   kubernetes.io/dockercfg   1         3m
 获取 private registry 中的 docker image 时，需要使用对应的 secret 提供访问权限
 在 rc 中 spec.template.spec 下添加  imagePullSecrets 指定使用的 secret
 比如：
-```shell
+```yaml
 apiVersion: v1
 kind: ReplicationController
 metadata:
@@ -410,14 +411,14 @@ spec:
   sessionAffinity: None
 ```
 NodePort的实现方式是在Kubernetes集群里的每个Node上为需要外部访问的Service开启一个对应的TCP监听端口，外部系统只要用任意一个Node的IP地址+具体的NodePort端口号即可访问此服务。下面为在任意节点netstat运行后的结果：
-```shell
+```bash
 tcp6       0      0 [::]:27017              [::]:*                  LISTEN      4015/kube-proxy
 ```
 注意：请查看docker已正确启动后再启动服务，否则服务将无法访问，可使用如下命令查看：
 `kubectl logs <PodName>`
  
 若一直卡在“waiting for connection”这个进程，可能是端口冲突导致container无法创建，这样即使服务创建好外部也无法访问。
-```shell
+```bash
 2017-11-01T20:11:38.314+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=mongo-controller-nbgsr
 2017-11-01T20:11:38.314+0000 I CONTROL  [initandlisten] db version v3.4.10
 2017-11-01T20:11:38.314+0000 I CONTROL  [initandlisten] git version: 078f28920cb24de0dd479b5ea6c66c644f6326e9

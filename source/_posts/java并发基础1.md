@@ -9,7 +9,7 @@ tags: Java
 
 在介绍线程前，有必要先介绍一下进程（Process），进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是程序的基本执行实体，可认为是线程的容器。
 
-![简易线程状态图](http://p158wkz8m.bkt.clouddn.com/线程状态图.PNG "简易线程状态图")
+![线程状态图](http://p158wkz8m.bkt.clouddn.com/线程状态.png)
 <escape><!-- more --></escape>
 
 线程的所有状态均在Thread中的State枚举中定义：

@@ -6,22 +6,21 @@ tags: Java
 ---
 ## 前言
 上节主要介绍了线程的生命周期和一些基本操作，这节主要描述一些多线程常用的API。
-<escape><!-- more --></escape>
+
 ## 一些重要的API
 
 ### wait和notify
 
+下图演示了notify()和wait()是如何工作的：
+
+![notify()和wait()](http://p158wkz8m.bkt.clouddn.com/notify.PNG)
+<escape><!-- more --></escape>
 这两个方法属于`Object`类，可以被任何对象调用：
 
 ```java
 public final void wait() throws InterruptedException
 public final native void notify()
 ```
-
-下图演示了notify()和wait()是如何工作的：
-
-![notify()和wait()](http://p158wkz8m.bkt.clouddn.com/notify.PNG)
-
 其次，Object.wait()不是随便可以调用的，它必须含在对应的`synchronized`语句中，因为无论是wait()和notify()都需要首先获得目标对象的一个监视器，其工作细节如下：
 
 ![wait()和notify()工作细节](http://p158wkz8m.bkt.clouddn.com/waitWorkDetail.PNG)
