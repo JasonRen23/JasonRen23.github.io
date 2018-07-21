@@ -1,8 +1,8 @@
 ---
-title: java内存区域
+title: Java内存区域
 date: 2018-04-08
 categories: JVM
-tags: java
+tags: Java
 ---
 
 > Java与C++之间有一堵由内存动态分配和垃圾收集技术所围成的“高墙”，墙外面的人想进去，墙里面的人却想出来。
@@ -10,7 +10,7 @@ tags: java
 
 Java虚拟机在执行Java程序的过程中会把它管理的内存划分为若干个不同的数据区域。
 
-![image](https://pic.yupoo.com/crowhawk/3d24df02/776c8d55.png)
+![JVM内存结构](http://p158wkz8m.bkt.clouddn.com/JVM内存结构.png)
 
 <escape><!-- more --></escape>
 

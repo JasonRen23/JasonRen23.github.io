@@ -1,8 +1,8 @@
 ---
-title: java并发基础(二)
+title: Java并发基础(二)
 date: 2017-12-20
 categories: 并发
-tags: java
+tags: Java
 ---
 ## 前言
 上节主要介绍了线程的生命周期和一些基本操作，这节主要描述一些多线程常用的API。
