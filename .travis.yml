@@ -17,6 +17,11 @@ before_script:
 script:
   - hexo clean && hexo g && hexo d
 
+addons:
+  browserstack:
+    username: "JasonRen23"
+    access_key:
+      - secure: "d2W8j86EPtarMVNT0a6G29WcA1ufIvhnrFBW9+b+TW42vZVWhNgEMUwcmXY9Afx0iEqF86SFwGlN03B/exzKIqEnQjxzSUA4IbN/YyAvUkWp+heQMFnVuQhbivwm6XLHK6JFjOTSAMAiGOE1ioSS3b5/EY51zYtGuylRUxVfPrdP682IY6gMXFdl49DBD4ftyl2tt7t1wvY6m5wEaQRFyrG4v7sPBY2ikkHWdAb9JcNnbKkdH2dwg4LtOw9gCm2UPfAqKNW7mtU48VQW7jk1/pA5DSVFZVTdXfBAdhU0F+nt1VkoaMUD2Ex2wfetqc0+Am2fprp6kPwcySOYv3JfEAllGPhkt23muAxb/QIoEMHWRVZiAT3y25haWlRvdHwrLOi1KsIyi25H1LhslKEmbGRRV0ZYvWV8KGgrf9mR1QCKaix+fLkAOrdcK3cLWtIGPV37LWjTKg78tiksw27eEfF5G8u36dMNv6Tcnl7eW20lOiDAdYcj9VLbPdynLdKRuRmFH6nMKcXSJdoJPmWnDgoELxKug78bztphficbyw5zUPxSj+ycR3bBlS+ZjQ+Lpq+MhTRMwD4YUA2F0iaX0dsHjiRIQ9kfjtRvCwFQ7k4hwPei+Og4mEYQFMnng16LBzZ3gZg9qvWBGngdF5sXH7tNB9OozhaVnINcKrg22M8="
 
 # after_script:
 #   - cd ./public
