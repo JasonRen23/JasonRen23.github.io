@@ -6,6 +6,8 @@
     "version": "3.4.4"
   },
   "scripts": {
+    "dev": "hexo clean && hexo generate && hexo s -g",
+    "prod": "hexo clean && hexo generate && hexo d",
     "build": "hexo g"
   },
   "dependencies": {
