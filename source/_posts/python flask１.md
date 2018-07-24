@@ -4,7 +4,7 @@ date: 2017-08-10
 categories: Web技术
 tags: Python
 ---
-<escape><img src="http://p158wkz8m.bkt.clouddn.com/flask.svg" width = "400" height = "300"  align=center ></escape>
+![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vuygp7j208b04o0sp.jpg)
 
 Flask是一个使用Python编写的轻量级Web应用框架，由于它能快速的构建一个外部可访问的服务器，所以如果想实现前后端的交互，Flask是个性价比较高的选择。
 

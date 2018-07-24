@@ -4,8 +4,7 @@ date: 2017-08-20 21:43:51
 categories: 容器云
 tags: docker
 ---
-![](http://p158wkz8m.bkt.clouddn.com/docker2.png)
-
+![](https://github.com/JasonRen23/imgs/raw/master/docker2.png)
 
 容器的典型生命周期：创建、管理、停止，直到最终删除
 <escape><!-- more --></escape>
@@ -37,15 +36,16 @@ sudo docker ps
 1.  用ctrl+p和ctrl+q可以推出shell并且不停止该容器的运行;
 2.  也可以用 `exit` 命令，重新进入的话需要先`start` 再 `attach`:
 
-![exit后如何重新进入容器shell](http://p158wkz8m.bkt.clouddn.com/start_attach.png "exit后如何重新进入容器shell")
+![exit后如何重新进入容器shell](https://ws1.sinaimg.cn/large/73d640f7gy1ftla1k65jfj20kx044ta4.jpg)
 
 ### 想要在容器内运行多个进程
 
 直接运行`sudo docker attach [container name]`，容器始终在同一个进程下运行，无法进行异步操作，如下图所示：
 
-![docker attach 结果](http://p158wkz8m.bkt.clouddn.com/dockerattach.png "docker attach 结果")
+![docker attach 结果](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vw02p6j20lf030gnx.jpg "docker attach 结果")
 
-运行`sudo docker exec -it [container name]`则结果非常满意：![docker exec 结果](http://p158wkz8m.bkt.clouddn.com/dockerexec.png "docker exec 结果")
+
+运行`sudo docker exec -it [container name]`则结果非常满意：![docker exec 结果](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vyiye1j20kw021jsw.jpg "docker exec 结果")
 
 ### 在容器内部运行进程
 

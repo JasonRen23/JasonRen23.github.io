@@ -4,7 +4,7 @@ date: 2018-03-02
 categories: 并发
 tags: Java
 ---
-![ConcurrentHashMap类图](http://p158wkz8m.bkt.clouddn.com/CocurrentHashMap.png)
+![ConcurrentHashMap类图](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9urrcioj20d707i74i.jpg)
 
 ### 在并发中使用ConcurrentHashMap的原因
 1. HashMap线程不安全，在并发执行put操作时会引起死循环，因为多线程会导致HashMap的Entry链表形成环形数据结构

@@ -46,18 +46,18 @@ npm install hexo-deployer-git -save(将博客与github关联需执行这步)
 ## 在google chrome上安装[livereload插件](https://chrome.google.com/webstore/search/livereload?hl=zh-CN)
 * 安装好以后可以在地址栏旁边看到如下按钮：
 
-![未开启监听](http://p158wkz8m.bkt.clouddn.com/livereload1.png "未开启监听")
+![未开启监听](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vvhtnxj2019019wea.jpg "未开启监听")
 
 * 右键单击按钮选择"管理扩展程序"，把"允许访问网址文件"这一选项勾选上：
-  ![允许访问文件网址打开](http://p158wkz8m.bkt.clouddn.com/livereload2.png "允许访问文件网址打开")
+  ![允许访问文件网址打开](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vvfy6xj20l904laa7.jpg "允许访问文件网址打开")
 
 * 最后，如果你的博客已经在4000端口运行起来了，请点击livereload按钮让其开启监听，按钮会变成实心，如图：
-  ![已开始监听](http://p158wkz8m.bkt.clouddn.com/livereload3.png "已开始监听")
+  ![已开始监听](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vvealwj20120110ce.jpg "已开始监听")
 
 ## 刷新延迟问题
 * 这里遇到一个比较纠结的问题，就是一旦编辑sublime之后，保存一次网页会随之刷新一次，但是网页上的内容没有随之变化，保存两次网页上的内容却可以发生变化。这样纠结的问题当然需要解决啊，而且我认为一定是文件保存和网页刷新之间出现先后竞争问题，于是开始了一段漫长的问题解决之旅。
   最后找到原因如下：
-  ![LiveReload Delay](http://p158wkz8m.bkt.clouddn.com/simpleloaddelay.png "LiveReload Delay")
+  ![LiveReload Delay](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vvu5gbj20tb09c75r.jpg "LiveReload Delay")
 * 于是我们进行如下操作：
    `shift+ctrl+p` -> `LiveReload: Enable/disable plugins` -> `Enable-Simple Reload with delay(400ms)`
     问题完美解决！enjoy it~

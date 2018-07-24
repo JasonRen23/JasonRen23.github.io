@@ -13,7 +13,7 @@ tags: Java
 
 下图演示了notify()和wait()是如何工作的：
 
-![notify()和wait()](http://p158wkz8m.bkt.clouddn.com/notify.PNG)
+![notify()和wait()](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vw9e61j20kk0etmxo.jpg)
 <escape><!-- more --></escape>
 这两个方法属于`Object`类，可以被任何对象调用：
 
@@ -23,7 +23,7 @@ public final native void notify()
 ```
 其次，Object.wait()不是随便可以调用的，它必须含在对应的`synchronized`语句中，因为无论是wait()和notify()都需要首先获得目标对象的一个监视器，其工作细节如下：
 
-![wait()和notify()工作细节](http://p158wkz8m.bkt.clouddn.com/waitWorkDetail.PNG)
+![wait()和notify()工作细节](https://ws1.sinaimg.cn/large/73d640f7gy1ftla8l9px9j20e30a33yn.jpg)
 
 从这里就可以更好地区别Object.wait()和Thread.sleep()，前者会释放目标对象的锁，而后者不会释放任何资源。
 

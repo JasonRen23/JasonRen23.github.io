@@ -4,7 +4,7 @@ date: 2017-08-11
 categories: Web技术
 tags: [Python,Meteor,JavaScript]
 ---
-<escape><img src="http://p158wkz8m.bkt.clouddn.com/flask.svg" width = "400" height = "300"  align=center ></escape>
+![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vuygp7j208b04o0sp.jpg)
 上一节聊了一下如何快速构建一个外部可访问的Flask服务器，这节主要演示一下如何快速构建前后端的交互功能。
 <escape><!-- more --></escape>
 ## 路由和HTTP方法

@@ -38,7 +38,7 @@ tags: Java
 - `log4j`是具体的日志系统。通过slf4j-log4j12初始化Log4j，达到最终的日志输出。
 - `lombok`：一个插件，封装了log的get和set，可以直接使用log来输出日志信息。
 2. 打开idea插件下载频道，下载Lombok Plugin这个插件，也可以移步[这里](http://plugins.jetbrains.com/plugin/6317-lombok-plugin )。
-![Lombok Plugin](http://p158wkz8m.bkt.clouddn.com/lombok_plugin.png)
+![Lombok Plugin](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vy87a5j20vq0mgjuu.jpg)
 3. 可以在代码中像如下例子中一样使用@Slf4j注解
 ```java
 @Slf4j

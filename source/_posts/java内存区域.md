@@ -10,7 +10,7 @@ tags: Java
 
 Java虚拟机在执行Java程序的过程中会把它管理的内存划分为若干个不同的数据区域。
 
-![JVM内存结构](http://p158wkz8m.bkt.clouddn.com/JVM内存结构.png)
+![JVM内存结构](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vw5caej20o20g7q5e.jpg)
 
 <escape><!-- more --></escape>
 

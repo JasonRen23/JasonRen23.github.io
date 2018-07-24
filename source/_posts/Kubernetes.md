@@ -6,7 +6,7 @@ tags: kubernetes
 ---
 
 最近忙于面试，为了缓解紧张的备战心情，更新一下之前总结的一些关于k8s的部署指南，包括**单机版**和**集群版**。
-![](http://p158wkz8m.bkt.clouddn.com/kubernetes.jpg)
+![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vxtsxvj20wp0fkdmx.jpg)
 <escape><!-- more --></escape>
 ## 单机版 kubernetes
 即 Master 和 Node （Minion）为同一台机器<escape><br></escape>

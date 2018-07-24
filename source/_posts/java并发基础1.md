@@ -9,7 +9,7 @@ tags: Java
 
 在介绍线程前，有必要先介绍一下进程（Process），进程是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是程序的基本执行实体，可认为是线程的容器。
 
-![线程状态图](http://p158wkz8m.bkt.clouddn.com/线程状态.png)
+![线程状态图](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9ury7vsj20ph0bb0ua.jpg)
 <escape><!-- more --></escape>
 
 线程的所有状态均在Thread中的State枚举中定义：
@@ -82,7 +82,7 @@ public class CreateThread implements Runnable{
 
 下图就是一个stop()方法导致终止线程导致数据不一致的例子：
 
-![终止线程导致数据不一致](http://p158wkz8m.bkt.clouddn.com/threadstop.PNG)
+![终止线程导致数据不一致](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9w8my97j20cn0b73yp.jpg)
 
 上述方法过于暴力。故一般自定义一个stopMe方法操作标志位stopme，然后由标志位指示当前线程是否需要退出。
 

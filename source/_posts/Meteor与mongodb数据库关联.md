@@ -6,7 +6,7 @@ tags: [Meteor, mongodb]
 ---
 
 
-![](http://p158wkz8m.bkt.clouddn.com/METEOR-JS.png)
+![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vwp2faj20h4085wiv.jpg)
 
 
 ## Flow Router

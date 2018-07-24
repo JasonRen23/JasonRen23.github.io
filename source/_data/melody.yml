@@ -35,7 +35,7 @@ highlight_theme: darker
 social:
     github-alt: https://github.com/JasonRen23
     paper-plane-o: https://www.zhihu.com/people/ren-zhi-cheng-1117
-    rss: http://jasonren.top/atom.xml
+    rss: https://www.jasonren.top/atom.xml
     # search:
     #    path: search.xml
     #    field: post
@@ -130,9 +130,9 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: http://osrmzp0jr.bkt.clouddn.com/618991108587536653.jpg
+avatar: https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vv8cz2j20jg0jgmy4.jpg
 
-top_img: http://p158wkz8m.bkt.clouddn.com/blogbg.jpg # false or url of img 
+top_img: https://ws1.sinaimg.cn/large/73d640f7gy1ftl9ush077j21hc0xc0yl.jpg # false or url of img 
 
 post_meta:
   date_type: created # created or updated 

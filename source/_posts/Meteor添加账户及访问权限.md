@@ -6,7 +6,7 @@ tags: [Meteor, mongodb]
 ---
 
 
-![](http://p158wkz8m.bkt.clouddn.com/METEOR-JS.png)
+![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vwp2faj20h4085wiv.jpg)
 
 在多个用户自定自己的用户查询模板后，可能存在有用户不希望其他用户更改自己的模板，于是就有了添加账户和模板访问权限这个需求。
 

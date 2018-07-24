@@ -10,7 +10,7 @@ tags: 计算机网络
  ## 基本概念
  QUIC是Quick UDP Internet Connection的简称，是Google制定的一种基于UDP的低时延的互联网传输层协议。TCP/IP协议族是互联网的基础。其中传输层协议包括TCP和UDP协议。与TCP协议相比，UDP更为轻量，但是错误校验也要少得多。这意味着UDP往往效率更高（不经常跟服务器端通信查看数据包是否送达或者按序），但是可靠性比不上TCP。通常游戏、流媒体以及VoIP等应用均采用UDP，而网页、邮件、远程登录等大部分的应用均采用TCP。
  
- ![image](http://a.36krcnd.com/nil_class/a83b066d-c141-4076-9ccc-78bad708bb83/QUIC-Figure-1.png!heading)
+ ![image](https://raw.githubusercontent.com/JasonRen23/imgs/master/QUIC-Figure-1.png)
  
  Google想到能否把这两种协议的优势结合起来，同时实现低时延和高可靠并将其应用到更高安全的协议上，于是就有了QUIC。
  
@@ -20,4 +20,4 @@ tags: 计算机网络
  
  为什么不干脆改进TCP，因为TCP往往直接内置到了操作系统内核当中。
  
- ![image](http://a.36krcnd.com/nil_class/4a244069-c67d-4cb2-98ba-819ac9acd329/0rtt-graphic.png!heading)
+ ![image](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9uru2trj20m80bydgn.jpg)
