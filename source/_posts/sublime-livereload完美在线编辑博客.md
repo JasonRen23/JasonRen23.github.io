@@ -6,7 +6,6 @@ tags: sublime
 ---
 
 
-<escape><img src="https://ws1.sinaimg.cn/large/73d640f7gy1ftlaekdjhjj21jk11143j.jpg" width = "500" height = "300"  align=center ></escape>
 
 &emsp;&emsp;第一次搭建博客，对`Markdown`还不是很熟悉，于是特别希望找到一套在线编辑能实时显示编辑效果的工具，`ST3+livereload`很好的满足了我的需求。
 <escape><!-- more --></escape>

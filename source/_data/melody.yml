@@ -14,7 +14,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /favicon.ico
+favicon: https://github.com/JasonRen23/imgs/raw/master/favicon.ico
 
 # PWA
 # ---------------
@@ -35,7 +35,7 @@ highlight_theme: darker
 social:
     github-alt: https://github.com/JasonRen23
     paper-plane-o: https://www.zhihu.com/people/ren-zhi-cheng-1117
-    rss: https://www.jasonren.top/atom.xml
+    rss: https://jasonren.top/atom.xml
     # search:
     #    path: search.xml
     #    field: post

@@ -40,7 +40,7 @@ tags: Java
 2. 打开idea插件下载频道，下载Lombok Plugin这个插件，也可以移步[这里](http://plugins.jetbrains.com/plugin/6317-lombok-plugin )。
 ![Lombok Plugin](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vy87a5j20vq0mgjuu.jpg)
 3. 可以在代码中像如下例子中一样使用@Slf4j注解
-```java
+```Java
 @Slf4j
 public final class ClassUtil {
     public static Class<?> loadClass(String className){
