@@ -2,7 +2,7 @@
 title: Apache Solr
 date: 2017-09-15 
 categories: 搜索引擎
-tags: [Python,Solr]	
+tags: Solr	
 ---
 
 ## Solr简介

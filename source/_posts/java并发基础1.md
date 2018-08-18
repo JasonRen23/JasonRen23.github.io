@@ -1,8 +1,8 @@
 ---
 title: Java并发基础(一)
 date: 2017-12-19 
-categories: 并发
-tags: Java
+categories: Java
+tags: 并发
 ---
 
 ## 线程的生命周期

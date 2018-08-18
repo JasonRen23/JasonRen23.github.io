@@ -1,8 +1,8 @@
 ---
 title: ConcurrentHashMap总结
 date: 2018-03-02
-categories: 并发
-tags: Java
+categories: Java
+tags: 并发
 ---
 ![ConcurrentHashMap类图](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9urrcioj20d707i74i.jpg)
 

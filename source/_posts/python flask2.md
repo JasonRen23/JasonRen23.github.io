@@ -1,8 +1,8 @@
 ---
 title: Python Flask Web简介(二)
 date: 2017-08-11
-categories: Web技术
-tags: [Python,Meteor,JavaScript]
+categories: Python
+tags: Web技术
 ---
 ![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vuygp7j208b04o0sp.jpg)
 上一节聊了一下如何快速构建一个外部可访问的Flask服务器，这节主要演示一下如何快速构建前后端的交互功能。

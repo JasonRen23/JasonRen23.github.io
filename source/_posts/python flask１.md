@@ -1,8 +1,8 @@
 ---
 title: Python Flask Web简介(一)
 date: 2017-08-10
-categories: Web技术
-tags: Python
+categories: Python
+tags: Web技术
 ---
 ![](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vuygp7j208b04o0sp.jpg)
 

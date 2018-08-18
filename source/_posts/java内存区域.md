@@ -1,8 +1,8 @@
 ---
 title: Java内存区域
 date: 2018-04-08
-categories: JVM
-tags: Java
+categories: Java
+tags: JVM
 ---
 
 > Java与C++之间有一堵由内存动态分配和垃圾收集技术所围成的“高墙”，墙外面的人想进去，墙里面的人却想出来。
