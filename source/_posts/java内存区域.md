@@ -12,7 +12,7 @@ Java虚拟机在执行Java程序的过程中会把它管理的内存划分为若
 
 ![JVM内存结构](https://ws1.sinaimg.cn/large/73d640f7gy1ftl9vw5caej20o20g7q5e.jpg)
 
-<escape><!-- more --></escape>
+<!-- more -->
 
 ## 程序计数器（Program Counter Register）
 - 线程私有

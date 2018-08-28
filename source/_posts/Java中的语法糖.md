@@ -221,6 +221,10 @@ public class demo1
 
 ### 例子二（带泛型上界的擦除）：
 
+注意：编译带有依赖关系的java文件时，需要一起编译
+
+> javac -d build Human.java HumanSay.java
+
 源码：
 
 ```java
