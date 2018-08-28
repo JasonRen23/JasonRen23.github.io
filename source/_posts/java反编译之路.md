@@ -41,6 +41,8 @@ jar cvf HelloWorld.jar HelloWorld.class //打成jar包
 
 下载[传送门](http://www.benf.org/other/cfr/)
 
+### switch语法糖
+
 ```java
 public class switchDemoString {
     public static void main(String[] args) {
@@ -58,7 +60,6 @@ public class switchDemoString {
 }
 
 ```
-### switch语法糖
 
 使用cfr进行反编译
 
